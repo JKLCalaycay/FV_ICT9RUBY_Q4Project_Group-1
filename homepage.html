@@ -80,7 +80,35 @@
 
 	<h1>Rate Us!</h1>
 
-	
+	<center>
+
+  <h2>Leave a Review</h2>
+  <textarea id="reviewInput" placeholder="Type your review here..."></textarea><br>
+  <button onclick="submitReview()">Submit</button>
+
+  <div class="review-box" id="reviewsSection">
+    <h3>Reviews:</h3>
+    <!-- Reviews will appear here -->
+  </div>
+
+  <script>
+    function submitReview() {
+      const reviewText = document.getElementById('reviewInput').value.trim();
+      if (reviewText === "") {
+        alert("Please enter a review!");
+        return;
+      }
+
+      const reviewsSection = document.getElementById('reviewsSection');
+      const newReview = document.createElement('div');
+      newReview.className = 'review';
+      newReview.textContent = reviewText;
+      reviewsSection.appendChild(newReview);
+
+      document.getElementById('reviewInput').value = ""; // Clear input
+    }
+  </script>
+
 
 	<h2> HELP CENTER </h2>
 
