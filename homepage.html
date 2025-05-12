@@ -86,6 +86,22 @@
       text-align: center;
     }
 
+    #reviewInput{
+      width: 50%;
+    }
+
+    footer{
+      background: radial-gradient(circle,rgba(86, 209, 205, 1) 0%, rgba(193, 120, 194, 1) 50%, rgba(232, 229, 144, 1) 100%);
+      padding: 5px;
+    }
+
+    .navbar{
+      background: linear-gradient(90deg,rgba(86, 209, 205, 1) 0%, rgba(193, 120, 194, 1) 50%, rgba(232, 229, 144, 1) 100%);
+    }
+    .navbar a{
+      color: black
+      font-size: 16px;
+    }
 
 </style>
 </head>
@@ -102,38 +118,38 @@
 			<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 	</div>
 
-	<nav class="navbar navbar-expand-md fixed-top"; style="background-color: #91d7d5;">
+	<nav class="navbar navbar-expand-md fixed-top">
 		<div class="container-fluid">
-			<img src="" style="width:75px; height: 50px">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHVuqgJPs1mFipnjsVwsFIYiYwTaulS-1_w&s" style="width:60px; height: 60px">
 
 				<div class="col" >
 					<ul class="navbar-nav me-auto">
 											<li class="nav-item">
-												<a class="nav-link" href="" style="color: #339390; 	font-size: 16px">About us</a>
+												<a class="nav-link" href="">About us</a>
 											</li>
 
 											<li class="nav-item">
-												<a class="nav-link" href="#q-1" style="color: #339390; font-size: 16px">Quarter 1</a>
+												<a class="nav-link" href="#q-1">Quarter 1</a>
 											</li>
 
 											<li class="nav-item">
-												<a class="nav-link" href="#q-2" style="color: #339390;font-size: 16px">Quarter 2</a>
+												<a class="nav-link" href="#q-2">Quarter 2</a>
 											</li>
 								
 											<li class="nav-item">
-												<a class="nav-link" href="#q-3" style="color: #339390;font-size: 16px">Quarter 3</a>
+												<a class="nav-link" href="#q-3">Quarter 3</a>
 											</li>
 
 											<li class="nav-item">
-												<a class="nav-link" href="#q-4" style="color: #339390;font-size: 16px">Quarter 4</a>
+												<a class="nav-link" href="#q-4">Quarter 4</a>
 											</li>
 
 											<li class="nav-item">
-												<a class="nav-link" href="#next" style="color: #339390;font-size: 16px">What's Next</a>
+												<a class="nav-link" href="#next">What's Next</a>
 											</li>
 
 											<li class="nav-item">
-												<a class="nav-link" href="#rate" style="color: #339390;font-size: 16px">Rate Us</a>
+												<a class="nav-link" href="#rate">Rate Us</a>
 											</li>
 
 
@@ -374,15 +390,21 @@
 
 	<h1 id="rate">Rate Us!</h1>
 
-        <textarea id="reviewInput" placeholder="Type your review here..."></textarea><br>
-        <button onclick="submitReview()">Submit</button>
+        <textarea id="reviewInput" placeholder="Type your review here..." rows="4"></textarea><br>
+        <button onclick="submitReview()" class="btn btn-info mt-3" >Submit</button>
 
 
-	<h2> HELP CENTER </h2>
+	<h2 class="mt-5"> HELP CENTER </h2>
 
 	<p> Need some help? Contact Us! </p>
         <br>
         <p> Office: xxxxx xxxxxx xx xxxxxxxxxx xxxx </p>
 	<br>
+
+  <footer class="mb-3"><span>
+    O.B. Montessori Center Fairview Campus
+    <br>
+    @Sam Luna, Giana Bernas, Julianna Calaycay, Luna Dimasuhid, Judah Judge
+  </span></footer>
 </body>
 </html>
