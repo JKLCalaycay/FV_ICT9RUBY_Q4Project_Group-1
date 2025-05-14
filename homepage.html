@@ -553,7 +553,7 @@
                       <br>
 
                        <label>
-                               <input id="q1_input" class="form-control" type="number" placeholder="Input rating.">
+                               <input id="q1_input" class="form-control" type="number" placeholder="Rate from 1-10">
                            </label>
 
                          <br><br>
@@ -568,7 +568,7 @@
                         <br>
 
                         <label>
-                             <input id="q2_input" class="form-control" type="number" placeholder="Input rating.">
+                             <input id="q2_input" class="form-control" type="number" placeholder="Rate from 1-10">
 
 
                           </label>  
@@ -583,7 +583,7 @@
                   <br>
 
                   <label>
-                       <input id="q3_input" class="form-control" type="number" placeholder="Input rating.">
+                       <input id="q3_input" class="form-control" type="number" placeholder="Rate from 1-10">
 
                 </div>
 
@@ -595,7 +595,7 @@
                   <br>
 
                   <label>
-                       <input id="q4_input" class="form-control" type="number" placeholder="Input rating.">
+                       <input id="q4_input" class="form-control" type="number" placeholder="Rate from 1-10">
                     </label>        
 
                 </div>
@@ -629,24 +629,24 @@ function getavscore(){
   let ratingAveResult = Math.round(ratingAve * 100)/100;
 
   switch(true){
-  case (ratingAveResult >= 9 && ratingAveResult <= 8.99):
-    alert("Your average rating is " + ratingAveResult + ". Your rating: Excellen");
+  case (ratingAveResult >= 9 && ratingAveResult <= 10):
+    alert("Your average rating is " + ratingAveResult + ". Your rating: Excellent. Thank you! We really put in a lot of effort in all our projects, so it means a lot. Glad you liked it! ");
     break;
 
-  case (ratingAveResult >= 87 && ratingAveResult <= 93.99):
-    alert("Your average rating is " + ratingAveResult + ". Your rating: Above Satisfactory");
+  case (ratingAveResult >= 7 && ratingAveResult <= 8.99):
+    alert("Your average rating is " + ratingAveResult + ". Your rating: Above Satisfactory. Appreciate the feedback! Always room to grow--aiming for that 10/10 next round.");
     break;
 
-  case (ratingAveResult >= 80 && ratingAveResult <= 86.99):
-    alert("Your average rating is " + ratingAveResult + ". Your rating: Satisfactory");
+  case (ratingAveResult >= 5 && ratingAveResult <= 6.99):
+    alert("Your average rating is " + ratingAveResult + ". Your rating:  Satisfactory. Thanks! It's always good to get different perspectives. We'll learn from it!");
     break;
 
-  case (ratingAveResult >= 75 && ratingAveResult <= 79.99):
-    alert("Your average rating is " + ratingAveResult + ". Your rating: Needs Improvement.");
+  case (ratingAveResult >= 3 && ratingAveResult <= 4.99):
+    alert("Your average rating is " + ratingAveResult + ". Your rating: Needs Improvement. Thanks for the honesty! We're learning from this and aiming to come back better.");
     break;
 
-  case (ratingAveResult >= 70 && ratingAveResult <= 74.99):
-    alert("Your average rating is " + ratingAveResult + ". Your rating: Poor");
+  case (ratingAveResult >= 1 && ratingAveResult <= 2.99):
+    alert("Your average rating is " + ratingAveResult + ". Your rating: Poor. Apprecite you sharing your thoughts. We'll leave it at that.");
     break;
 
   default:
